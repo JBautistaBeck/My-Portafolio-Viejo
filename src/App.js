@@ -1,4 +1,5 @@
 import NavBar from './componentes/NavBar';
+import Footer from './componentes/footer';
 import About from './views/about';
 import Home from './views/home';
 import NuestrasRazas from './views/nuestrasRazas';
@@ -16,6 +17,10 @@ function App() {
       </div>
       <div className="flex-1" id="razas">
         <NuestrasRazas></NuestrasRazas>
+      </div>
+
+      <div>
+        <Footer></Footer>
       </div>
     </div>
   );

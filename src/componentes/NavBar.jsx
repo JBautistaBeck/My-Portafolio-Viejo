@@ -25,7 +25,7 @@ function NavBar() {
 
         <img src={logoMalfa} alt="LogoMalfa" className=" max-h-14"></img>
 
-        <div className=" mt-4">
+        <div className="">
 
             <button onClick={() => handleAboutClick("about")} className="text-black border-b border-black m-4 scroll-link hover:transform hover:scale-105 hover:shadow-xl">About Us</button>
             <button onClick={() => handleAboutClick("razas")} className="text-black border-b border-black m-4  scroll-link hover:transform hover:scale-105 hover:shadow-xl">Nuestras Razas</button>

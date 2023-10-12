@@ -1,13 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './componentes/NavBar';
+import About from './views/about';
+import Home from './views/home';
 
 function App() {
   return (
-    <div className="bg-blue-500 text-white p-4 flex-reverse">
-      <h1 className="text-2xl">Mi proyecto con React y Tailwind CSS</h1>
-      <button className="bg-green-500 text-white px-4 py-2 mt-4 hover:bg-green-600">
-        Haz clic aquí
-      </button>
+    <div className="bg-red-500 text-white p-4 h-screen">
+      <NavBar></NavBar>
+      <h1 className="text-2xl">Malfa Criadores</h1>
+
+      <Home></Home>
+      <About></About>
+
     </div>
   );
 }

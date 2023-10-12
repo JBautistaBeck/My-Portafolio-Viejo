@@ -1,8 +1,12 @@
+import logoMalfa from "../utils/logoMalfa.jpg"
 
 function NavBar() {
     return (
-      <div className="bg-yellow-500 text-white p-4">
-        <h1 className="text-2xl">NavBar</h1>
+      <div className=" text-white p-4 bg-gray-200">
+
+        <img src={logoMalfa} alt="LogoMalfa" className=" max-h-20"></img>
+
+        <button className=" text-black">About Us</button>
   
       </div>
     );

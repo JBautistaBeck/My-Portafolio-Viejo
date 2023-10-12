@@ -27,8 +27,8 @@ function NavBar() {
 
         <div className=" mt-4">
 
-            <button onClick={() => handleAboutClick("about")} className="text-black border-b border-black m-4 scroll-link hover:bg-red-600 ">About Us</button>
-            <button onClick={() => handleAboutClick("razas")} className="text-black border-b border-black m-4  scroll-link hover:p-1">Nuestras Razas</button>
+            <button onClick={() => handleAboutClick("about")} className="text-black border-b border-black m-4 scroll-link hover:transform hover:scale-105 hover:shadow-xl">About Us</button>
+            <button onClick={() => handleAboutClick("razas")} className="text-black border-b border-black m-4  scroll-link hover:transform hover:scale-105 hover:shadow-xl">Nuestras Razas</button>
 
         </div>
 

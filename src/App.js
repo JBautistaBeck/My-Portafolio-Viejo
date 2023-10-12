@@ -1,19 +1,22 @@
-import './App.css';
 import NavBar from './componentes/NavBar';
 import About from './views/about';
 import Home from './views/home';
 
 function App() {
   return (
-    <div className="bg-red-500 text-white p-4 h-screen">
-      <NavBar></NavBar>
-      <h1 className="text-2xl">Malfa Criadores</h1>
+    <div className="flex flex-col h-screen">
+      <NavBar />
 
-      <Home></Home>
-      <About></About>
-
+      <div className="flex-1">
+        <Home />
+      </div>
+      <div className="flex-1">
+        <About />
+      </div>
     </div>
   );
 }
 
 export default App;
+
+

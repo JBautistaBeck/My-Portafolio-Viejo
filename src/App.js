@@ -1,6 +1,7 @@
 import NavBar from './componentes/NavBar';
 import About from './views/about';
 import Home from './views/home';
+import NuestrasRazas from './views/nuestrasRazas';
 
 function App() {
   return (
@@ -10,8 +11,11 @@ function App() {
       <div className="flex-1">
         <Home />
       </div>
-      <div className="flex-1">
+      <div className="flex-1" id="about">
         <About />
+      </div>
+      <div className="flex-1" id="nuestrasRazas">
+        <NuestrasRazas></NuestrasRazas>
       </div>
     </div>
   );

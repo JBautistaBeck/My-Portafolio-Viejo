@@ -14,7 +14,7 @@ function App() {
       <div className="flex-1" id="about">
         <About />
       </div>
-      <div className="flex-1" id="nuestrasRazas">
+      <div className="flex-1" id="razas">
         <NuestrasRazas></NuestrasRazas>
       </div>
     </div>

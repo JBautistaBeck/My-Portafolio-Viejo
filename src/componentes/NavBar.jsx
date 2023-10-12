@@ -1,6 +1,25 @@
 import logoMalfa from "../utils/logoMalfa.jpg"
+import React from 'react';
 
 function NavBar() {
+
+    const handleAboutClick = (id) => {
+        if(id === "about") {
+
+            const aboutSection = document.getElementById('about');
+            if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+            }
+
+        } else if (id === "razas") {
+            const razasSection = document.getElementById('razas');
+            if (razasSection) {
+            razasSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+      };
+
+
     return (
       <div className=" text-white p-4 bg-gray-200 flex justify-between">
 
@@ -8,8 +27,8 @@ function NavBar() {
 
         <div className=" mt-4">
 
-            <a href="#about" className="text-black border-b border-black m-4 scroll-link hover:bg-red-600 ">About Us</a>
-            <a href="#nuestrasRazas" className="text-black border-b border-black m-4  scroll-link hover:bg-red-600">Nuestras Razas</a>
+            <button onClick={() => handleAboutClick("about")} className="text-black border-b border-black m-4 scroll-link hover:bg-red-600 ">About Us</button>
+            <button onClick={() => handleAboutClick("razas")} className="text-black border-b border-black m-4  scroll-link hover:p-1">Nuestras Razas</button>
 
         </div>
 

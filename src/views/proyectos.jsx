@@ -23,7 +23,7 @@ function Proyectos() {
 
       <h1 className='text-5xl font-bold'>Proyectos</h1>
 
-      <div className="">
+      <div className=" bg-red-500 felx flex-row">
       {informacionPro.map((proyecto, index) => (
         <Card
           key={index}

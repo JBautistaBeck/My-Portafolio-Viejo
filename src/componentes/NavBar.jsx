@@ -13,8 +13,8 @@ function NavBar() {
             aboutSection.scrollIntoView({ behavior: 'smooth' });
             }
 
-        } else if (id === "razas") {
-            const razasSection = document.getElementById('razas');
+        } else if (id === "proyectos") {
+            const razasSection = document.getElementById('proyectos');
             if (razasSection) {
             razasSection.scrollIntoView({ behavior: 'smooth' });
             }
@@ -29,8 +29,9 @@ function NavBar() {
 
         <div className="">
 
-            <button onClick={() => handleAboutClick("about")} className="text-black border-b border-black mt-2 ml-6 scroll-link hover:transform hover:scale-105 hover:shadow-xl">About Us</button>
-            <button onClick={() => handleAboutClick("razas")} className="text-black border-b border-black mt-2 ml-6 scroll-link hover:transform hover:scale-105 hover:shadow-xl">Nuestras Razas</button>
+            <button onClick={() => handleAboutClick("about")} className=" text-slate-700 border-b border-slate-700 mt-2 ml-6 scroll-link hover:text-black hover:border-black">About Us</button>
+            <button onClick={() => handleAboutClick("proyectos")} className="text-slate-700 border-b border-slate-700 mt-2 ml-6 scroll-link hover:text-black hover:border-black">Proyectos</button>
+            <button onClick={() => handleAboutClick("proyectos")} className="text-slate-700 border-b border-slate-700 mt-2 ml-6 mr-4 scroll-link hover:text-black hover:border-black">Skills</button>
 
         </div>
 

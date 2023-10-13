@@ -2,7 +2,7 @@ import NavBar from './componentes/NavBar';
 import Footer from './componentes/footer';
 import About from './views/about';
 import Home from './views/home';
-import Proyectos from './views/nuestrasRazas';
+import Proyectos from './views/proyectos';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <div className="flex-1" id="about">
         <About />
       </div>
-      <div className="flex-1" id="razas">
+      <div className="flex-1" id="proyectos">
         <Proyectos></Proyectos>
       </div>
 

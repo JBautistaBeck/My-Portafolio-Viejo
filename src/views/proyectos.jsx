@@ -19,11 +19,11 @@ function Proyectos() {
   };
 
   return (
-    <div className=" bg-orange-500 text-black p-10 h-screen">
+    <div className=" bg-orange-500 text-black p-10 h-full">
 
-      <h1 className='text-5xl font-bold'>Proyectos</h1>
+      <h1 className='text-5xl font-bold mb-10'>Proyectos</h1>
 
-      <div className=" bg-red-500 flex flex-wrap items-center justify-center max-h-96 mb-8">
+      <div className=" bg-red-500 flex flex-wrap items-center justify-center ">
       {informacionPro.map((proyecto, index) => (
         <div className="w-1/2 p-2" key={index}>
           <Card

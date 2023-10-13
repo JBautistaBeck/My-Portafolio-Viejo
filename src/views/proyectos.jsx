@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Card from '../componentes/card';
-// import Detail from '../detail/detail';
+import Detail from '../componentes/detail';
 import informacionPro from '../utils/informacionPro.json';
 
 function Proyectos() {
@@ -37,17 +37,17 @@ function Proyectos() {
           repositorio={proyecto.repositorio}
           lenguajes={proyecto.lenguajes}
           fechaCreacion={proyecto.fechaCreacion}
-          // onClickFotos={() => handleShowDetail(proyecto)}
+          onClickFotos={() => handleShowDetail(proyecto)}
         />
        ))}
       </div>
 
-      {/* {showDetail && (
+      {showDetail && (
         <Detail
           proyecto={selectedProject}
           onClose={handleCloseDetail} // Pasa la función para cerrar Detail
         />
-      )} */}
+      )}
       
     </div>
   );

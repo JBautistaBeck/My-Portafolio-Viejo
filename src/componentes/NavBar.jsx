@@ -1,5 +1,7 @@
-import logoMalfa from "../utils/logoMalfa.jpg"
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+
 
 function NavBar() {
 
@@ -21,14 +23,14 @@ function NavBar() {
 
 
     return (
-      <div className=" text-white p-4 bg-gray-200 flex justify-between">
+      <div className=" p-2 pl-6 bg-gray-200 flex justify-between">
 
-        <img src={logoMalfa} alt="LogoMalfa" className=" max-h-14"></img>
+        <FontAwesomeIcon className=' w-12 h-12' icon={faLaptopCode} />
 
         <div className="">
 
-            <button onClick={() => handleAboutClick("about")} className="text-black border-b border-black m-4 scroll-link hover:transform hover:scale-105 hover:shadow-xl">About Us</button>
-            <button onClick={() => handleAboutClick("razas")} className="text-black border-b border-black m-4  scroll-link hover:transform hover:scale-105 hover:shadow-xl">Nuestras Razas</button>
+            <button onClick={() => handleAboutClick("about")} className="text-black border-b border-black mt-2 ml-6 scroll-link hover:transform hover:scale-105 hover:shadow-xl">About Us</button>
+            <button onClick={() => handleAboutClick("razas")} className="text-black border-b border-black mt-2 ml-6 scroll-link hover:transform hover:scale-105 hover:shadow-xl">Nuestras Razas</button>
 
         </div>
 

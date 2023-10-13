@@ -12,60 +12,82 @@ function Detail({ onClose, proyecto }) {
   };
 
   return (
-    <div className="detail-overlay">
-      <div className="detail-content">
-        <button className="close-button" onClick={onClose}>
-          <FontAwesomeIcon icon={faX} />
-        </button>
-        <h1 className="project-name">{proyecto.nombre}</h1>
+        <div className="fixed inset-0 bg-opacity-70 bg-black z-50 flex items-center justify-center">
 
-        {/* Pestañas */}
-        <div className="tabs">
+            <div className="relative bg-white p-4 w-11/12 md:w-3/4 h-5/6 text-right rounded-lg">
 
-          <div className={`tabx ${activeTab === 'fotos' ? 'active' : ''}`} onClick={() => handleTabClick('fotos')}> <h1>Fotos</h1> </div>
+                    <button
+                    onClick={onClose}
+                    className="absolute top-2 right-2 bg-transparent border border-black rounded-lg px-3 py-1 text-black hover:bg-black hover:text-white cursor-pointer"
+                    >
+                        <FontAwesomeIcon icon={faX} />
+                    </button>
 
-          <div className={`tabx ${activeTab === 'videos' ? 'active' : ''}`} onClick={() => handleTabClick('videos')}> <h1>Videos</h1> </div>
+                    <h1 className="text-2xl font-bold text-black project-name">
+                        {proyecto.nombre}
+                    </h1>
 
+                    <div className="flex justify-between border-b border-gray-300 mb-5">
+                        <div
+                            onClick={() => handleTabClick("fotos")}
+                            className={`flex-1 cursor-pointer ${
+                            activeTab === "fotos" ? "bg-white border-b-2 border-black" : ""
+                            } tabx`}
+                        >
+                            <h1 className="text-sm">Fotos</h1>
+                    </div>
+
+                    <div
+                        onClick={() => handleTabClick("videos")}
+                        className={`flex-1 cursor-pointer ${
+                        activeTab === "videos" ? "bg-white border-b-2 border-black" : ""
+                        } tabx`}
+                    >
+                        <h1 className="text-sm">Videos</h1>
+                    </div>
+
+                </div>
+
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+
+                    <div className={`${ activeTab === "fotos" ? "block" : "hidden" } column h-96 max-h-96 overflow-y-auto`}>
+
+                        <div className="carousel-container">
+                            <Carousel showThumbs={false} showStatus={false} itemsToShow={1} itemsToScroll={1} infiniteLoop={false} showArrows={true}>
+
+                                {proyecto.fotos.map((imagen, index) => (
+                                    <div key={index}>
+                                        <img
+                                        src={imagen}
+                                        alt={`Foto ${index}`}
+                                        className="detail-image"
+                                        />
+                                    </div>
+                                ))}
+
+                            </Carousel>
+                        </div>
+
+                    </div>
+
+
+                    <div className={`${ activeTab === "videos" ? "block" : "hidden" } column h-96 max-h-96 overflow-y-auto`}>
+                        <div className="video-container">
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                src={proyecto.linkVideo}
+                                title="YouTube video player"
+                                // frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        {/* Contenido de las pestañas */}
-        <div className="columns">
-
-          <div className={`column ${activeTab === 'fotos' ? 'active' : ''}`}>
-
-            <div className="carousel-container">
-              <Carousel  showThumbs={false} showStatus={false} itemsToShow={1} itemsToScroll={1} infiniteLoop={false} showArrows={true}  >
-                {proyecto.fotos.map((imagen, index) => (
-                  <div key={index}>
-                    <img src={imagen} alt={`Foto ${index}`} />
-                  </div>
-                ))}
-              </Carousel>
-            </div>
-
-          </div>
-
-          <div className={`column ${activeTab === 'videos' ? 'active' : ''}`}>
-
-            <div className="video-container">
-
-              <iframe
-                width="560"
-                height="315"
-                src={proyecto.linkVideo}
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media;gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-
-            </div>
-
-          </div>
-          
-        </div>
-      </div>
-    </div>
   );
 }
 

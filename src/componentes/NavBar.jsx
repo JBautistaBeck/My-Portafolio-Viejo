@@ -17,7 +17,7 @@ function NavBar() {
             razasSection.scrollIntoView({ behavior: 'smooth' });
             }
         }
-      };
+    };
 
 
     return (

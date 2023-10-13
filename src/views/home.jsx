@@ -31,7 +31,7 @@ function Home() {
         <div className="flex justify-center mt-12">
             <button onClick={handleAboutClick} className="  text-black px-4 py-2 rounded border border-black hover:transform hover:scale-105">More about me</button>
         </div>
-        
+
     </div>
 
   );

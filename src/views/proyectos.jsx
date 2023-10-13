@@ -23,22 +23,24 @@ function Proyectos() {
 
       <h1 className='text-5xl font-bold'>Proyectos</h1>
 
-      <div className=" bg-red-500 felx flex-row">
+      <div className=" bg-red-500 flex flex-wrap items-center justify-center max-h-96 mb-8">
       {informacionPro.map((proyecto, index) => (
-        <Card
-          key={index}
-          id={proyecto.id}
-          nombre={proyecto.nombre}
-          descripcion={proyecto.descripcion}
-          clonePBack={proyecto.clonePBack}
-          clonePFront={proyecto.clonePFront}
-          repositorioBack={proyecto.repositorioBack}
-          repositorioFront={proyecto.repositorioFront}
-          repositorio={proyecto.repositorio}
-          lenguajes={proyecto.lenguajes}
-          fechaCreacion={proyecto.fechaCreacion}
-          onClickFotos={() => handleShowDetail(proyecto)}
-        />
+        <div className="w-1/2 p-2" key={index}>
+          <Card
+            key={index}
+            id={proyecto.id}
+            nombre={proyecto.nombre}
+            descripcion={proyecto.descripcion}
+            clonePBack={proyecto.clonePBack}
+            clonePFront={proyecto.clonePFront}
+            repositorioBack={proyecto.repositorioBack}
+            repositorioFront={proyecto.repositorioFront}
+            repositorio={proyecto.repositorio}
+            lenguajes={proyecto.lenguajes}
+            fechaCreacion={proyecto.fechaCreacion}
+            onClickFotos={() => handleShowDetail(proyecto)}
+          />
+        </div>
        ))}
       </div>
 

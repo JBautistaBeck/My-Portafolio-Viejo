@@ -6,9 +6,10 @@ function Card({ id, nombre, descripcion, repositorioFront, repositorioBack, leng
   return (
     <div className=" bg-green-800 rounded-lg p-4 m-4 shadow-lg max-w-xl">
 
-      <h1 className="text-2xl font-bold text-black mx-52">{nombre}</h1>
-      <p className="text-black my-2 mx-44">{descripcion}</p>
-
+        <div className='text-center'>
+            <h1 className="text-2xl font-bold text-black ">{nombre}</h1>
+            <p className="text-black my-2 ">{descripcion}</p>
+        </div>
 
         <div className='flex flex-col items-center'>
 

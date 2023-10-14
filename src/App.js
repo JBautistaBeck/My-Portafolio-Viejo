@@ -3,6 +3,7 @@ import Footer from './componentes/footer';
 import About from './views/about';
 import Home from './views/home';
 import Proyectos from './views/proyectos';
+import Skills from './views/skills';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
       </div>
       <div className="flex-1" id="proyectos">
         <Proyectos></Proyectos>
+      </div>
+      <div>
+        <Skills></Skills>
       </div>
 
       <div>

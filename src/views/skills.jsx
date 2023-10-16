@@ -12,17 +12,17 @@ function Skills() {
 
 
   return (
-    <div className='all'>
-    <div className="skills-container">
-      <div className="tabs">
+    <div className=''>
+    <div className="">
+      <div className=" flex flex-row">
 
-        <div className={`tab ${activeTab === 'tech' ? 'active' : ''}`} onClick={() => handleTabChange('tech')}> Tech Skills </div>
+        <div className={`cursor-pointer p-2 border-t-2 border-l-2 border-r-2 rounded-t-lg ${ activeTab === 'tech' ? 'bg-blue-500 border-blue-600' : ''}`} onClick={() => handleTabChange('tech')}> Tech Skills </div>
 
-        <div className={`tab ${activeTab === 'soft' ? 'active' : ''}`} onClick={() => handleTabChange('soft')}> Soft Skills </div>
+        <div className={`cursor-pointer p-2 border-t-2 border-l-2 border-r-2 rounded-t-lg ${ activeTab === 'soft' ? 'bg-blue-500 border-blue-600' : ''}`} onClick={() => handleTabChange('soft')}> Soft Skills </div>
 
       </div>
 
-      <div className="tab-content">
+      <div className="">
 
         {/* Contenido de Tech Skills */}
         {activeTab === 'tech' && (
@@ -47,7 +47,7 @@ function Skills() {
         {/* Contenido de Soft Skills */}
         {activeTab === 'soft' && (
           <div>
-            <ul className='ul-skills-soft'>
+            <ul className=''>
               <li> <FontAwesomeIcon icon={faCircleCheck} style={{color: "#1f5122",}} /> <b>Comunicación</b></li>
               <li> <FontAwesomeIcon icon={faCircleCheck} style={{color: "#1f5122",}} /> <b>Trabajo en equipo</b></li>
               <li> <FontAwesomeIcon icon={faCircleCheck} style={{color: "#1f5122",}} /> <b>Resolución de problemas</b></li>

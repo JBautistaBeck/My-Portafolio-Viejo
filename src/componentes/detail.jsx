@@ -38,7 +38,7 @@ function Detail({ onClose, proyecto }) {
 
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
 
-                    <div className={`${ activeTab === "fotos" ? "block" : "hidden" } column h-96 max-h-96 overflow-y-auto`}>
+                    <div className={`${ activeTab === "fotos" ? "block" : "hidden" } column overflow-y-auto h-auto w-screen max-w-3xl ml-24`}>
 
                         <div className="carousel-container">
                             <Carousel showThumbs={false} showStatus={false} itemsToShow={1} itemsToScroll={1} infiniteLoop={false} showArrows={true}>
@@ -59,8 +59,8 @@ function Detail({ onClose, proyecto }) {
                     </div>
 
 
-                    <div className={`${ activeTab === "videos" ? "block" : "hidden" } column h-96 max-h-96 overflow-y-auto`}>
-                        <div className="video-container">
+                    <div className={`${ activeTab === "videos" ? "block" : "hidden" } flex items-center justify-center h-screen max-h-96 w-screen max-w-3xl ml-24 overflow-y-auto`}>
+                        <div className=" h-full w-full">
                             <iframe
                                 width="100%"
                                 height="100%"

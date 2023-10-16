@@ -40,7 +40,7 @@ function Detail({ onClose, proyecto }) {
 
                     <div className={`${ activeTab === "fotos" ? "block" : "hidden" } column h-96 max-h-96 overflow-y-auto`}>
 
-                        <div className="">
+                        <div className="carousel-container">
                             <Carousel showThumbs={false} showStatus={false} itemsToShow={1} itemsToScroll={1} infiniteLoop={false} showArrows={true}>
 
                                 {proyecto.fotos.map((imagen, index) => (
@@ -60,7 +60,7 @@ function Detail({ onClose, proyecto }) {
 
 
                     <div className={`${ activeTab === "videos" ? "block" : "hidden" } column h-96 max-h-96 overflow-y-auto`}>
-                        <div className="">
+                        <div className="video-container">
                             <iframe
                                 width="100%"
                                 height="100%"

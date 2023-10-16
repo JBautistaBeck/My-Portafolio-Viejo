@@ -12,9 +12,9 @@ function Skills() {
 
 
   return (
-    <div className=''>
-    <div className="">
-      <div className=" flex flex-row">
+    <div className=" bg-yellow-500 flex flex-col items-center justify-center">
+      
+      <div className=" flex flex-row bg-lime-700">
 
         <div className={`cursor-pointer p-2 border-t-2 border-l-2 border-r-2 rounded-t-lg ${ activeTab === 'tech' ? 'bg-blue-500 border-blue-600' : ''}`} onClick={() => handleTabChange('tech')}> Tech Skills </div>
 
@@ -22,22 +22,22 @@ function Skills() {
 
       </div>
 
-      <div className="">
+      <div className=" bg-red-800">
 
         {/* Contenido de Tech Skills */}
         {activeTab === 'tech' && (
           <div>
-            <ul className='ul-skills-tech'>
-              <li><img src='https://img.icons8.com/color/48/000000/javascript.png' alt='JavaScript'></img> <b>JavaScript</b> </li>
-              <li><img src='https://img.icons8.com/color/48/000000/nodejs.png' alt='Node.js'></img> <b>Node.js</b> </li>
-              <li><img src='https://img.icons8.com/color/48/000000/redux.png' alt='Redux'></img> <b>Redux</b> </li>
-              <li><img src='https://img.icons8.com/color/48/000000/react-native.png' alt='React.js'></img> <b>React.js</b> </li>
-              <li><img src='https://img.icons8.com/color/48/000000/express.png' alt='Express'></img> <b>Express</b> </li>
-              <li><img src='https://w7.pngwing.com/pngs/441/460/png-transparent-postgresql-plain-wordmark-logo-icon-thumbnail.png' alt='PosgreSQL'></img> <b>PosgreSQL</b> </li>
-              <li><img src='https://img.icons8.com/color/48/000000/css3.png' alt='CSS'></img> <b>CSS</b> </li>
-              <li><img src='https://img.icons8.com/color/48/000000/html-5.png' alt='HTML'></img> <b>HTML</b> </li>
-              <li><img src='https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png' alt='Sequelize'></img> <b>Sequelize</b> </li>
-              <li><img src='https://img.icons8.com/color/48/000000/git.png' alt='Git'></img> <b>Git</b> </li>
+            <ul className=' grid grid-cols-2 gap-4'>
+              <li><img className=' w-11' src='https://img.icons8.com/color/48/000000/javascript.png' alt='JavaScript'></img> <b>JavaScript</b> </li>
+              <li><img className=' w-11' src='https://img.icons8.com/color/48/000000/nodejs.png' alt='Node.js'></img> <b>Node.js</b> </li>
+              <li><img className=' w-11' src='https://img.icons8.com/color/48/000000/redux.png' alt='Redux'></img> <b>Redux</b> </li>
+              <li><img className=' w-11' src='https://img.icons8.com/color/48/000000/react-native.png' alt='React.js'></img> <b>React.js</b> </li>
+              <li><img className=' w-11' src='https://img.icons8.com/color/48/000000/express.png' alt='Express'></img> <b>Express</b> </li>
+              <li><img className=' w-11' src='https://w7.pngwing.com/pngs/441/460/png-transparent-postgresql-plain-wordmark-logo-icon-thumbnail.png' alt='PosgreSQL'></img> <b>PosgreSQL</b> </li>
+              <li><img className=' w-11' src='https://img.icons8.com/color/48/000000/css3.png' alt='CSS'></img> <b>CSS</b> </li>
+              <li><img className=' w-11' src='https://img.icons8.com/color/48/000000/html-5.png' alt='HTML'></img> <b>HTML</b> </li>
+              <li><img className=' w-11' src='https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png' alt='Sequelize'></img> <b>Sequelize</b> </li>
+              <li><img className=' w-11' src='https://img.icons8.com/color/48/000000/git.png' alt='Git'></img> <b>Git</b> </li>
             </ul>
           </div>
         )}
@@ -63,7 +63,6 @@ function Skills() {
         )}
 
       </div>
-    </div>
     </div>
   );
 }

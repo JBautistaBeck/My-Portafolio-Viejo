@@ -14,7 +14,7 @@ function About() {
             </div>
                 
             <div className='w-2/3 ml-8'>
-                <h1 className="text-4xl font-bold mb-4">About Me</h1>
+                <h1 className="text-4xl font-bold mb-4">Sobre mí</h1>
                 <p className='text-lg mb-10'>{aboutMeText1}</p>
 
                 <a href='https://docs.google.com/document/d/11-ACxx88UTeenLH1yS40QdkM-7Y5Uk-5AFdoxkhnGt4/edit' target="_blank" rel="noopener noreferrer"><button className='text-black px-4 py-2 rounded border border-black hover:bg-gray-950 hover:text-gray-200 block'>Curriculum Vitae</button></a>

@@ -24,7 +24,7 @@ function Skills() {
   return (
     <div className=" bg-blue-400 h-full flex flex-col items-center justify-center">
 
-      <h1 className=' text-5xl mt-24 mb-8 font-bold'>Skills</h1>
+      <h1 className=' text-5xl mt-24 mb-8 font-bold'>Habilidades</h1>
       
       <div className=" flex flex-row w-3/4 mt-0">
 
@@ -34,7 +34,7 @@ function Skills() {
 
       </div>
 
-      <div className=" border border-black border-t-0 rounded-b-lg w-3/4 h-[65vh] mb-14 py-5  shadow-lg">
+      <div className=" border border-black border-t-0 rounded-b-lg w-3/4 h-[80vh] mb-14 py-5  shadow-lg">
 
         {/* Contenido de Tech Skills */}
         {activeTab === 'tech' && (

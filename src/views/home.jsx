@@ -30,7 +30,7 @@ function Home() {
       </div>
 
         <div className="flex justify-center mt-12 slide-from-bottom ">
-            <button onClick={handleAboutClick} className=" text-lg text-black px-4 py-2 rounded-lg border border-black hover:bg-gray-950 hover:text-gray-200">More about me</button>
+            <button onClick={handleAboutClick} className=" text-lg text-black px-4 py-2 rounded-lg border border-black hover:bg-gray-950 hover:text-gray-200">Más sobre mí</button>
         </div>
 
     </div>

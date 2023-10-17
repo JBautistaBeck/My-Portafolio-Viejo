@@ -12,7 +12,7 @@ function Skills() {
 
 
   return (
-    <div className=" bg-gray-500 h-screen flex flex-col items-center justify-center">
+    <div className=" h-screen flex flex-col items-center justify-center">
 
       <h1 className=' text-5xl my-8'>Skills</h1>
       

@@ -4,7 +4,7 @@ import { faCamera } from '@fortawesome/free-solid-svg-icons';
 
 function Card({ id, nombre, descripcion, repositorioFront, repositorioBack, lenguajes, fechaCreacion, repositorio, onClickFotos }) {
   return (
-    <div className=" bg-green-800 rounded-lg p-4 m-4 shadow-lg max-w-xl">
+    <div className="border border-black rounded-lg p-4 m-4 shadow-lg max-w-xl">
 
         <div className='text-center'>
             <h1 className="text-2xl font-bold text-black ">{nombre}</h1>

@@ -28,13 +28,13 @@ function Skills() {
       
       <div className=" flex flex-row w-3/4 mt-0">
 
-        <div className={` w-1/2 cursor-pointer p-2 rounded-t-lg flex items-center justify-center ${ activeTab === 'tech' ? ' border border-b-0 border-black' : ' bg-blue-400 border-b border-black'}`} onClick={() => handleTabChange('tech')}> Tech Skills </div>
+        <div className={` w-1/2 cursor-pointer p-2 rounded-t-lg flex items-center justify-center ${ activeTab === 'tech' ? ' border border-b-0 border-black' : ' border-b border-black'}`} onClick={() => handleTabChange('tech')}> Tech Skills </div>
 
-        <div className={` w-1/2 cursor-pointer p-2 rounded-t-lg flex items-center justify-center ${ activeTab === 'soft' ? ' border border-b-0 border-black' : ' bg-blue-400 border-b border-black'}`} onClick={() => handleTabChange('soft')}> Soft Skills </div>
+        <div className={` w-1/2 cursor-pointer p-2 rounded-t-lg flex items-center justify-center ${ activeTab === 'soft' ? ' border border-b-0 border-black' : ' border-b border-black'}`} onClick={() => handleTabChange('soft')}> Soft Skills </div>
 
       </div>
 
-      <div className=" border border-black border-t-0 rounded-b-lg w-3/4 h-[80vh] mb-14 py-5  shadow-lg">
+      <div className=" border border-black border-t-0 rounded-b-lg w-3/4 h-[70vh] mb-14 py-5  shadow-lg">
 
         {/* Contenido de Tech Skills */}
         {activeTab === 'tech' && (

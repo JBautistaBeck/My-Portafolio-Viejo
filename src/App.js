@@ -5,12 +5,16 @@ import Home from './views/home';
 import Proyectos from './views/proyectos';
 import Skills from './views/skills';
 
+
 function App() {
+
   return (
     <div className="flex flex-col h-screen">
-      <NavBar />
+      <div >
+        <NavBar > </NavBar> 
+      </div>
 
-      <div className="flex-1">
+      <div className="flex-1" id="home">
         <Home />
       </div>
       <div className="flex-1" id="about">

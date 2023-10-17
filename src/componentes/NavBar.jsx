@@ -1,36 +1,67 @@
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import React, { useEffect, useState } from 'react';
 
 
 function NavBar() {
+    const [scrolling, setScrolling] = useState(false);
 
-    const handleAboutClick = (id) => {
-        if(id === "about") {
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
 
-            const aboutSection = document.getElementById('about');
-            if (aboutSection) {
-            aboutSection.scrollIntoView({ behavior: 'smooth' });
-            }
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
 
-        } else if (id === "proyectos") {
-            const proyectosSection = document.getElementById('proyectos');
-            if (proyectosSection) {
-            proyectosSection.scrollIntoView({ behavior: 'smooth' });
-            }
-        }  else if (id === "skills") {
-          const skillsSection = document.getElementById('skills');
-          if (skillsSection) {
-          skillsSection.scrollIntoView({ behavior: 'smooth' });
-          }
+
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
       }
     };
 
 
-    return (
-      <div className=" p-2 pl-6 bg-gray-200 flex justify-between">
 
-        <FontAwesomeIcon className=' w-12 h-12' icon={faLaptopCode} />
+    const handleAboutClick = (id) => {
+        if(id === "about") {
+
+          const aboutSection = document.getElementById('about');
+          if (aboutSection) {
+          aboutSection.scrollIntoView({ behavior: 'smooth' });
+          }
+
+        } else if (id === "proyectos") {
+
+          const proyectosSection = document.getElementById('proyectos');
+          if (proyectosSection) {
+          proyectosSection.scrollIntoView({ behavior: 'smooth' });
+          }
+
+        }  else if (id === "skills") {
+
+          const skillsSection = document.getElementById('skills');
+          if (skillsSection) {
+          skillsSection.scrollIntoView({ behavior: 'smooth' });
+          }
+
+        }  else if (id === "home") {
+
+          const homeSection = document.getElementById('home');
+          if (homeSection) {
+          homeSection.scrollIntoView({ behavior: 'smooth' });
+          }
+
+        }
+    };
+
+
+    return (
+      <div className={`fixed top-0 w-full p-2 pl-6 flex justify-between duration-500  ${ scrolling ? 'backdrop-blur-lg bg-white opacity-90' : ' backdrop-blur-lg '}`}>
+
+        <FontAwesomeIcon onClick={() => handleAboutClick("home")} className=' w-12 h-12' icon={faLaptopCode} title="Principio" />
 
         <div className="">
 

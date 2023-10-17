@@ -19,29 +19,29 @@ function Proyectos() {
   };
 
   return (
-    <div className=" bg-orange-500 text-black p-10 h-full flex flex-col items-center justify-center">
+    <div className=" bg-blue-500 text-black p-10 h-full flex flex-col items-center justify-center">
 
-      <h1 className='text-5xl font-bold mb-10'>Proyectos</h1>
+      <h1 className='text-5xl font-bold my-10'>Proyectos</h1>
 
       <div className=" flex flex-wrap items-center justify-center ">
-      {informacionPro.map((proyecto, index) => (
-        <div className="w-1/2 p-2" key={index}>
-          <Card
-            key={index}
-            id={proyecto.id}
-            nombre={proyecto.nombre}
-            descripcion={proyecto.descripcion}
-            clonePBack={proyecto.clonePBack}
-            clonePFront={proyecto.clonePFront}
-            repositorioBack={proyecto.repositorioBack}
-            repositorioFront={proyecto.repositorioFront}
-            repositorio={proyecto.repositorio}
-            lenguajes={proyecto.lenguajes}
-            fechaCreacion={proyecto.fechaCreacion}
-            onClickFotos={() => handleShowDetail(proyecto)}
-          />
-        </div>
-       ))}
+        {informacionPro.map((proyecto, index) => (
+          <div className="w-1/2 p-2" key={index}>
+            <Card
+              key={index}
+              id={proyecto.id}
+              nombre={proyecto.nombre}
+              descripcion={proyecto.descripcion}
+              clonePBack={proyecto.clonePBack}
+              clonePFront={proyecto.clonePFront}
+              repositorioBack={proyecto.repositorioBack}
+              repositorioFront={proyecto.repositorioFront}
+              repositorio={proyecto.repositorio}
+              lenguajes={proyecto.lenguajes}
+              fechaCreacion={proyecto.fechaCreacion}
+              onClickFotos={() => handleShowDetail(proyecto)}
+            />
+          </div>
+        ))}
       </div>
 
       {showDetail && (

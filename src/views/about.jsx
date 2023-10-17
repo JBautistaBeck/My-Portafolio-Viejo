@@ -5,9 +5,9 @@ function About() {
     const aboutMeText1 = "¡Hola! 👋🏼 Soy Juan Bautista María Beck, un estudiante avanzado en Administración de Empresas con una gran pasión por la programación. Durante mi recorrido universitario, mi incesante curiosidad por el mundo de la programación me impulsó a dar un paso al frente. Inicié mi formación en programación en Soy Henry y desde entonces, me he sumergido de lleno en el fascinante universo tecnológico. En la actualidad, me encuentro en constante exploración de nuevas tecnologías y mantengo al día con las últimas tendencias."
 
     return (
-      <div className="bg-blue-500 pt-10 pb-10 pr-10 h-screen">
+      <div className="bg-blue-400 pt-10 pb-10 pr-10 h-screen">
 
-        <div className=" flex flex-row items-center">
+        <div className=" flex flex-row items-center mt-10">
 
             <div className='w-1/3 mt-4'>
                 <img className=' rounded-r-full' src={fotoPerfil} alt='FotoPerfil'></img>

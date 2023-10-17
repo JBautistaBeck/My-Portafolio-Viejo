@@ -14,9 +14,9 @@ function Home() {
     };
 
   return (
-    <div className="bg-green-500 p-10 h-screen">
+    <div className="bg-blue-500 p-10 h-screen">
 
-      <div className="flex flex-col justify-center items-center mt-20">
+      <div className="flex flex-col justify-center items-center mt-32">
         <h1 className=" text-5xl">Juan Bautista María Beck</h1>
         <h2 className=" text-3xl mt-5">Full Stack Developer</h2>
       </div>

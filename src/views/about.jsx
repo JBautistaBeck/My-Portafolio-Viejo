@@ -14,7 +14,6 @@ function About() {
             </div>
                 
             <div className='w-2/3 ml-8'>
-                {/* <Link to="/proyectos" className='top-right-button'> <button className='button-aboutme'><FontAwesomeIcon  icon={faArrowRight} /></button> </Link> */}
                 <h1 className="text-4xl font-bold mb-4">About Me</h1>
                 <p className='text-lg mb-10'>{aboutMeText1}</p>
 

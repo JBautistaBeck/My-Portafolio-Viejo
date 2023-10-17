@@ -19,11 +19,9 @@ function Proyectos() {
   };
 
   return (
-    <div className=" bg-gradient-to-l from-mantis-400 to-mantis-700 text-black p-10 h-full flex flex-col items-center justify-center">
-
-      <h1 className='text-5xl font-bold my-10'>Proyectos</h1>
-
-      <div className=" flex flex-wrap items-center justify-center ">
+    <div className="bg-gradient-to-l from-mantis-400 to-mantis-700 text-black p-4 h-full flex flex-col items-center justify-center">
+      <h1 className='text-3xl font-bold my-4 mt-16'>Proyectos</h1>
+      <div className="flex flex-wrap items-center justify-center">
         {informacionPro.map((proyecto, index) => (
           <div className="w-1/2 p-2" key={index}>
             <Card
@@ -43,14 +41,12 @@ function Proyectos() {
           </div>
         ))}
       </div>
-
       {showDetail && (
         <Detail
           proyecto={selectedProject}
           onClose={handleCloseDetail} // Pasa la función para cerrar Detail
         />
       )}
-      
     </div>
   );
 }

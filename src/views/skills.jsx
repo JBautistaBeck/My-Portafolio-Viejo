@@ -61,16 +61,16 @@ function Skills() {
         {activeTab === 'soft' && (
           <div className=' ml-28'>
             <ul className='grid grid-cols-2 gap-y-12 gap-x-14 p-8 text-xl'>
-              <li> <FontAwesomeIcon icon={faCircleCheck} style={{color: "#1f5122",}} /> <b>Comunicación</b></li>
-              <li> <FontAwesomeIcon icon={faCircleCheck} style={{color: "#1f5122",}} /> <b>Trabajo en equipo</b></li>
-              <li> <FontAwesomeIcon icon={faCircleCheck} style={{color: "#1f5122",}} /> <b>Resolución de problemas</b></li>
-              <li> <FontAwesomeIcon icon={faCircleCheck} style={{color: "#1f5122",}} /> <b>Creatividad</b></li>
-              <li> <FontAwesomeIcon icon={faCircleCheck} style={{color: "#1f5122",}} /> <b>Adaptabilidad</b></li>
-              <li> <FontAwesomeIcon icon={faCircleCheck} style={{color: "#1f5122",}} /> <b>Gestión del tiempo</b></li>
-              <li> <FontAwesomeIcon icon={faCircleCheck} style={{color: "#1f5122",}} /> <b>Ética profesional</b></li>
-              <li> <FontAwesomeIcon icon={faCircleCheck} style={{color: "#1f5122",}} /> <b>Aprendizaje rápido</b></li>
-              <li> <FontAwesomeIcon icon={faCircleCheck} style={{color: "#1f5122",}} /> <b>Optimista</b></li>
-              <li> <FontAwesomeIcon icon={faCircleCheck} style={{color: "#1f5122",}} /> <b>Proactivo</b></li>
+              <li> <FontAwesomeIcon icon={faCircleCheck} className=' mr-4' /> <b>Comunicación</b></li>
+              <li> <FontAwesomeIcon icon={faCircleCheck} className=' mr-4' /> <b>Trabajo en equipo</b></li>
+              <li> <FontAwesomeIcon icon={faCircleCheck} className=' mr-4' /> <b>Resolución de problemas</b></li>
+              <li> <FontAwesomeIcon icon={faCircleCheck} className=' mr-4' /> <b>Creatividad</b></li>
+              <li> <FontAwesomeIcon icon={faCircleCheck} className=' mr-4' /> <b>Gestión del tiempo</b></li>
+              <li> <FontAwesomeIcon icon={faCircleCheck} className=' mr-4' /> <b>Adaptabilidad</b></li>
+              <li> <FontAwesomeIcon icon={faCircleCheck} className=' mr-4' /> <b>Ética profesional</b></li>
+              <li> <FontAwesomeIcon icon={faCircleCheck} className=' mr-4' /> <b>Aprendizaje rápido</b></li>
+              <li> <FontAwesomeIcon icon={faCircleCheck} className=' mr-4' /> <b>Optimista</b></li>
+              <li> <FontAwesomeIcon icon={faCircleCheck} className=' mr-4' /> <b>Proactivo</b></li>
             </ul>
           </div>
         )}

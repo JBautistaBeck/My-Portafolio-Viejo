@@ -5,8 +5,11 @@ function Footer() {
         
         <h1 className=" text-5xl p-4">Contáctame</h1>
 
-        <p className=" text-2xl text-center">
-          Actualmente estoy estudiando día a día para perfeccionarme como programador. Si sabes de algún trabajo o pasantía, no dudes en contactarme.<a href="mailto:juanbautistabeck@gmail.com" className="text-blue-900 hover:underline"> juanbautistabeck@gmail.com </a>
+        <p className=" text-lg text-center">
+            Soy un programador en constante aprendizaje. Si estás interesado en colaborar o tienes alguna pregunta, no dudes en contactarme. Puedes escribirme a mi dirección de correo electrónico: 
+              <a href="mailto:juanbautistabeck@gmail.com" className="text-blue-900 hover:underline"> juanbautistabeck@gmail.com</a>.
+              También puedes conectar conmigo en mis perfiles de redes sociales.
+              ¡Espero tener noticias tuyas pronto!
         </p>
 
       </div>

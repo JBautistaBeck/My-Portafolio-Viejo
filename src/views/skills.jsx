@@ -24,17 +24,17 @@ function Skills() {
   return (
     <div className=" bg-blue-400 h-full flex flex-col items-center justify-center">
 
-      <h1 className=' text-5xl mt-24 mb-8'>Skills</h1>
+      <h1 className=' text-5xl mt-24 mb-8 font-bold'>Skills</h1>
       
       <div className=" flex flex-row w-3/4 mt-0">
 
-        <div className={` w-1/2 cursor-pointer p-2 rounded-t-lg flex items-center justify-center ${ activeTab === 'tech' ? 'bg-blue-100 border border-b-0 border-black' : ' bg-blue-400 border-b border-black'}`} onClick={() => handleTabChange('tech')}> Tech Skills </div>
+        <div className={` w-1/2 cursor-pointer p-2 rounded-t-lg flex items-center justify-center ${ activeTab === 'tech' ? ' border border-b-0 border-black' : ' bg-blue-400 border-b border-black'}`} onClick={() => handleTabChange('tech')}> Tech Skills </div>
 
-        <div className={` w-1/2 cursor-pointer p-2 rounded-t-lg flex items-center justify-center ${ activeTab === 'soft' ? 'bg-blue-100 border border-b-0 border-black' : ' bg-blue-400 border-b border-black'}`} onClick={() => handleTabChange('soft')}> Soft Skills </div>
+        <div className={` w-1/2 cursor-pointer p-2 rounded-t-lg flex items-center justify-center ${ activeTab === 'soft' ? ' border border-b-0 border-black' : ' bg-blue-400 border-b border-black'}`} onClick={() => handleTabChange('soft')}> Soft Skills </div>
 
       </div>
 
-      <div className=" bg-blue-100 border border-black border-t-0 w-3/4 h-[65vh] mb-14 py-5 ">
+      <div className=" border border-black border-t-0 rounded-b-lg w-3/4 h-[65vh] mb-14 py-5  shadow-lg">
 
         {/* Contenido de Tech Skills */}
         {activeTab === 'tech' && (

@@ -16,7 +16,7 @@ function Card({ id, nombre, descripcion, repositorioFront, repositorioBack, leng
             <div className='mb-2'>
                 {repositorioFront ? (
                     <a href={repositorioFront} target="_blank" rel="noopener noreferrer">
-                    <button className="text-black border border-black py-2 px-4 mx-2 rounded-full">
+                    <button className="text-black border border-black py-2 px-4 mx-2 rounded-full hover:bg-gray-950 hover:text-gray-200">
                         <FontAwesomeIcon icon={faGithub} /> Repositorio FrontEnd
                     </button>
                     </a>
@@ -25,7 +25,7 @@ function Card({ id, nombre, descripcion, repositorioFront, repositorioBack, leng
             
                 {repositorioBack ? (
                     <a href={repositorioBack} target="_blank" rel="noopener noreferrer">
-                    <button className="text-black border border-black py-2 px-4 mx-2 rounded-full mt-2">
+                    <button className="text-black border border-black py-2 px-4 mx-2 rounded-full mt-2 hover:bg-gray-950 hover:text-gray-200">
                         <FontAwesomeIcon icon={faGithub} /> Repositorio BackEnd
                     </button>
                     </a>
@@ -33,7 +33,7 @@ function Card({ id, nombre, descripcion, repositorioFront, repositorioBack, leng
 
                 {repositorio ? (
                     <a href={repositorio} target="_blank" rel="noopener noreferrer">
-                    <button className="text-black border border-black py-2 px-4 mx-2 rounded-full mt-2">
+                    <button className="text-black border border-black py-2 px-4 mx-2 rounded-full mt-2 hover:bg-gray-950 hover:text-gray-200">
                         <FontAwesomeIcon icon={faGithub} /> Repositorio
                     </button>
                     </a>
@@ -42,7 +42,7 @@ function Card({ id, nombre, descripcion, repositorioFront, repositorioBack, leng
 
             <button
                 onClick={onClickFotos}
-                className="text-black border border-black py-2 px-4 rounded-full mt-2 mb-2"
+                className="text-black border border-black py-2 px-4 rounded-full mt-2 mb-2 hover:bg-gray-950 hover:text-gray-200"
             >
                 <FontAwesomeIcon icon={faCamera} /> Fotos
             </button>

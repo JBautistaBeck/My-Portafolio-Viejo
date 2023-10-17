@@ -22,7 +22,7 @@ function Skills() {
 
 
   return (
-    <div className=" bg-blue-400 h-full flex flex-col items-center justify-center">
+    <div className=" bg-gradient-to-r from-mantis-400 to-mantis-700 h-full flex flex-col items-center justify-center">
 
       <h1 className=' text-5xl mt-24 mb-8 font-bold'>Habilidades</h1>
       

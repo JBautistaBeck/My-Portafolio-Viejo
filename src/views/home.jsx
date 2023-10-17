@@ -15,7 +15,7 @@ function Home() {
     };
 
   return (
-    <div className="bg-blue-500 p-10 h-screen">
+    <div className=" bg-gradient-to-l from-mantis-400 to-mantis-700 p-10 h-screen">
 
       <div className="flex flex-col justify-center items-center mt-32 slide-from-top">
         <h1 className=" text-7xl">Juan Bautista María Beck</h1>

@@ -19,7 +19,7 @@ function Proyectos() {
   };
 
   return (
-    <div className=" bg-blue-500 text-black p-10 h-full flex flex-col items-center justify-center">
+    <div className=" bg-gradient-to-l from-mantis-400 to-mantis-700 text-black p-10 h-full flex flex-col items-center justify-center">
 
       <h1 className='text-5xl font-bold my-10'>Proyectos</h1>
 

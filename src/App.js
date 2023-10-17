@@ -19,7 +19,7 @@ function App() {
       <div className="flex-1" id="proyectos">
         <Proyectos></Proyectos>
       </div>
-      <div>
+      <div className='flex-1' id="skills">
         <Skills></Skills>
       </div>
 

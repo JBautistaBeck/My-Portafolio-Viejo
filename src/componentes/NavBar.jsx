@@ -14,11 +14,16 @@ function NavBar() {
             }
 
         } else if (id === "proyectos") {
-            const razasSection = document.getElementById('proyectos');
-            if (razasSection) {
-            razasSection.scrollIntoView({ behavior: 'smooth' });
+            const proyectosSection = document.getElementById('proyectos');
+            if (proyectosSection) {
+            proyectosSection.scrollIntoView({ behavior: 'smooth' });
             }
-        }
+        }  else if (id === "skills") {
+          const skillsSection = document.getElementById('skills');
+          if (skillsSection) {
+          skillsSection.scrollIntoView({ behavior: 'smooth' });
+          }
+      }
     };
 
 
@@ -31,7 +36,7 @@ function NavBar() {
 
             <button onClick={() => handleAboutClick("about")} className=" text-slate-700 border-b border-slate-700 mt-2 ml-6 scroll-link hover:text-black hover:border-black">About Us</button>
             <button onClick={() => handleAboutClick("proyectos")} className="text-slate-700 border-b border-slate-700 mt-2 ml-6 scroll-link hover:text-black hover:border-black">Proyectos</button>
-            <button onClick={() => handleAboutClick("proyectos")} className="text-slate-700 border-b border-slate-700 mt-2 ml-6 mr-4 scroll-link hover:text-black hover:border-black">Skills</button>
+            <button onClick={() => handleAboutClick("skills")} className="text-slate-700 border-b border-slate-700 mt-2 ml-6 mr-4 scroll-link hover:text-black hover:border-black">Skills</button>
 
         </div>
 

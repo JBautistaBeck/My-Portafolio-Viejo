@@ -7,15 +7,15 @@ function About() {
     return (
       <div className="bg-gradient-to-r from-mantis-400 to-mantis-700 pt-10 pb-10 pr-10 h-screen">
 
-        <div className=" flex flex-row items-center mt-10">
+        <div className=" flex flex-col  sm:flex sm:flex-row items-center sm:mt-10">
 
             <div className='w-1/3 mt-4'>
-                <img className=' rounded-r-full' src={fotoPerfil} alt='FotoPerfil'></img>
+                <img className=' rounded-full mt-8 mb-4 sm:rounded-r-full' src={fotoPerfil} alt='FotoPerfil'></img>
             </div>
                 
             <div className='w-2/3 ml-8'>
                 <h1 className="text-4xl font-bold mb-4">Sobre mí</h1>
-                <p className='text-lg mb-10'>{aboutMeText1}</p>
+                <p className=' text-base sm:text-lg mb-10'>{aboutMeText1}</p>
 
                 <a href='https://docs.google.com/document/d/11-ACxx88UTeenLH1yS40QdkM-7Y5Uk-5AFdoxkhnGt4/edit' target="_blank" rel="noopener noreferrer"><button className='text-black px-4 py-2 rounded border border-black hover:bg-gray-950 hover:text-gray-200 block'>Curriculum Vitae</button></a>
 
@@ -26,4 +26,3 @@ function About() {
   }
   
 export default About;
-  

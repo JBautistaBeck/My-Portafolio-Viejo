@@ -7,13 +7,13 @@ function About() {
     return (
       <div className="bg-gradient-to-r from-mantis-400 to-mantis-700 pt-10 pb-10 pr-10 h-full sm:h-screen">
 
-        <div className=" flex flex-col  sm:flex sm:flex-row items-center sm:mt-10">
+        <div className=" flex flex-col sm:flex-row items-center sm:mt-10">
 
-            <div className='w-1/3 mt-4'>
-                <img className=' rounded-full mt-8 mb-4 sm:rounded-r-full' src={fotoPerfil} alt='FotoPerfil'></img>
+            <div className=' sm:w-1/3 mt-4'>
+                <img className='  rounded-r-full sm:rounded-r-full mx-auto mt-8 mb-4 ' src={fotoPerfil} alt='FotoPerfil'></img>
             </div>
                 
-            <div className='w-2/3 ml-8'>
+            <div className='sm:w-2/3 ml-8'>
                 <h1 className="text-4xl font-bold mb-4">Sobre mí</h1>
                 <p className=' text-base sm:text-lg mb-10'>{aboutMeText1}</p>
 

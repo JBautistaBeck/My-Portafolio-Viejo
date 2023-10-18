@@ -11,6 +11,7 @@ import React1 from "../utils/LogosSkills/React.png"
 import Redux from "../utils/LogosSkills/Redux.png"
 import Node1 from "../utils/LogosSkills/Node.png"
 import JS from "../utils/LogosSkills/JS.png"
+import tailwind from "../utils/LogosSkills/tailwind.png"
 
 function Skills() {
   
@@ -34,12 +35,12 @@ function Skills() {
 
       </div>
 
-      <div className=" border border-black border-t-0 rounded-b-lg w-5/6 sm:w-3/4 h-full sm:h-[70vh] mb-14 py-5  shadow-lg">
+      <div className=" border border-black border-t-0 rounded-b-lg w-5/6 sm:w-3/4 h-full sm:h-[95vh] mb-14 py-5  shadow-lg">
 
         {/* Contenido de Tech Skills */}
         {activeTab === 'tech' && (
           <div className=''>
-            <ul className=' grid grid-cols-3 sm:grid-cols-5 gap-y-14 sm:gap-y-28 mt-10'>
+            <ul className=' grid grid-cols-3 sm:grid-cols-5 gap-y-14 sm:gap-y-16 mt-10'>
               <li className=' flex flex-col items-center'><img className=' w-12 sm:w-20 mb-2 sm:mb-2' src={JS} alt='JavaScript'></img> <b>JavaScript</b> </li>
               <li className=' flex flex-col items-center'><img className=' w-12 sm:w-20 mb-2 sm:mb-2' src={CSS} alt='CSS'></img> <b>CSS</b> </li>
               <li className=' flex flex-col items-center'><img className=' w-10 sm:w-16 mb-3 sm:mb-4' src={HTML} alt='HTML'></img> <b>HTML</b> </li>
@@ -51,6 +52,7 @@ function Skills() {
               <li className=' flex flex-col items-center'><img className=' w-12 sm:w-16 sm:mt-4 mb-2 sm:mb-4' src={PosgreSQL} alt='PosgreSQL'></img> <b>PosgreSQL</b> </li>
               <li className=' flex flex-col items-center'><img className=' w-12 sm:w-16 sm:mt-2 mb-1 sm:mb-4' src={Sequelize} alt='Sequelize'></img> <b>Sequelize</b> </li>
               <li className=' flex flex-col items-center'><img className=' w-12 sm:w-20 sm:mt-2 mb-2 sm:mb-3' src={Git} alt='Git'></img> <b>Git</b> </li>
+              <li className=' flex flex-col items-center'><img className=' w-12 sm:w-20 sm:mt-2 mb-2 sm:mb-3' src={tailwind} alt='Git'></img> <b>Tailwind CSS</b> </li>
             </ul>
           </div>
         )}

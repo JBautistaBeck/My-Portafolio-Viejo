@@ -34,7 +34,7 @@ function Skills() {
 
       </div>
 
-      <div className=" border border-black border-t-0 rounded-b-lg w-5/6 sm:w-3/4 h-[70vh] mb-14 py-5  shadow-lg">
+      <div className=" border border-black border-t-0 rounded-b-lg w-5/6 sm:w-3/4 h-full sm:h-[70vh] mb-14 py-5  shadow-lg">
 
         {/* Contenido de Tech Skills */}
         {activeTab === 'tech' && (

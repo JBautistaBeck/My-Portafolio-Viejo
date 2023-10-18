@@ -28,7 +28,7 @@ function Proyectos() {
               key={index}
               id={proyecto.id}
               nombre={proyecto.nombre}
-              descripcion={proyecto.descripcion}
+              // descripcion={proyecto.descripcion}
               clonePBack={proyecto.clonePBack}
               clonePFront={proyecto.clonePFront}
               repositorioBack={proyecto.repositorioBack}

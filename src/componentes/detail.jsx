@@ -14,7 +14,7 @@ function Detail({ onClose, proyecto }) {
   return (
         <div className="fixed inset-0 bg-opacity-70 bg-black z-50 flex items-center justify-center">
 
-            <div className="relative bg-white p-4 w-11/12 md:w-3/4 h-5/6 text-right rounded-lg">
+            <div className="relative bg-mantis-500 p-4 w-11/12 md:w-3/4 h-3/5 sm:h-5/6 text-right rounded-lg">
 
                     <button onClick={onClose} className="absolute top-2 right-2 bg-transparent border border-black rounded-lg px-2 text-black hover:bg-black hover:text-white cursor-pointer">
                         <FontAwesomeIcon icon={faX} />
@@ -24,23 +24,23 @@ function Detail({ onClose, proyecto }) {
                         <h1 className="text-2xl font-bold text-black project-name"> {proyecto.nombre}</h1>
                     </div>
 
-                    <div className="flex justify-between border-b border-gray-300 mb-5">
+                    <div className="flex justify-between">
 
-                        <div onClick={() => handleTabClick("fotos")} className={`flex-1 cursor-pointer ${ activeTab === "fotos" ? "bg-white border-b-2 border-black flex justify-center " : "flex justify-center"} tabx`}>
+                        <div onClick={() => handleTabClick("fotos")} className={`flex-1 cursor-pointer ${ activeTab === "fotos" ? "bg-mantis-400 rounded-t-lg border-b border-black flex justify-center " : "flex justify-center"} tabx`}>
                             <h1 className="text-sm">Fotos</h1>
                         </div>
 
-                        <div onClick={() => handleTabClick("videos")} className={`flex-1 cursor-pointer ${ activeTab === "videos" ? "bg-white border-b-2 border-black flex justify-center " : "flex justify-center"} tabx`}>
+                        <div onClick={() => handleTabClick("videos")} className={`flex-1 cursor-pointer ${ activeTab === "videos" ? "bg-mantis-400 rounded-t-lg border-b border-black flex justify-center " : "flex justify-center"} tabx`}>
                             <h1 className="text-sm">Videos</h1>
                         </div>
 
                     </div>
 
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 bg-mantis-400">
 
-                    <div className={`${ activeTab === "fotos" ? "block" : "hidden" } column overflow-y-auto h-auto w-screen max-w-3xl ml-24`}>
+                    <div className={`${ activeTab === "fotos" ? "block" : "hidden" } column overflow-y-auto h-auto w-screen max-w-xs sm:max-w-5xl ml-4 sm:ml-24 sm:mt-4`}>
 
-                        <div className="carousel-container">
+                        <div className="">
                             <Carousel showThumbs={false} showStatus={false} itemsToShow={1} itemsToScroll={1} infiniteLoop={false} showArrows={true}>
 
                                 {proyecto.fotos.map((imagen, index) => (
@@ -59,7 +59,7 @@ function Detail({ onClose, proyecto }) {
                     </div>
 
 
-                    <div className={`${ activeTab === "videos" ? "block" : "hidden" } flex items-center justify-center h-screen max-h-96 w-screen max-w-3xl ml-24 overflow-y-auto`}>
+                    <div className={`${ activeTab === "videos" ? "block" : "hidden" } flex items-center justify-center h-screen max-h-96 w-72 sm:w-screen sm:max-w-5xl ml-4 sm:ml-24 sm:mt-14 overflow-y-auto`}>
                         <div className=" h-full w-full">
                             <iframe
                                 width="100%"

@@ -59,8 +59,8 @@ function Skills() {
 
         {/* Contenido de Soft Skills */}
         {activeTab === 'soft' && (
-          <div className=' ml-28'>
-            <ul className='grid grid-cols-2 gap-y-12 gap-x-14 p-8 text-xl'>
+          <div className=' ml-10 sm:ml-28'>
+            <ul className='grid sm:grid grid-cols-1 sm:grid-cols-2 gap-y-7 sm:gap-y-12 sm:gap-x-14 sm:p-8 sm:text-xl '>
               <li> <FontAwesomeIcon icon={faCircleCheck} className=' mr-4' /> <b>Comunicación</b></li>
               <li> <FontAwesomeIcon icon={faCircleCheck} className=' mr-4' /> <b>Trabajo en equipo</b></li>
               <li> <FontAwesomeIcon icon={faCircleCheck} className=' mr-4' /> <b>Resolución de problemas</b></li>

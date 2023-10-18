@@ -26,19 +26,19 @@ function Detail({ onClose, proyecto }) {
 
                     <div className="flex justify-between">
 
-                        <div onClick={() => handleTabClick("fotos")} className={`flex-1 cursor-pointer ${ activeTab === "fotos" ? "bg-mantis-400 rounded-t-lg border-b border-black flex justify-center " : "flex justify-center"} tabx`}>
+                        <div onClick={() => handleTabClick("fotos")} className={`flex-1 cursor-pointer ${ activeTab === "fotos" ? "bg-mantis-400 rounded-t-lg border-b border-black flex justify-center " : "flex justify-center border-b border-black"} tabx`}>
                             <h1 className="text-sm">Fotos</h1>
                         </div>
 
-                        <div onClick={() => handleTabClick("videos")} className={`flex-1 cursor-pointer ${ activeTab === "videos" ? "bg-mantis-400 rounded-t-lg border-b border-black flex justify-center " : "flex justify-center"} tabx`}>
+                        <div onClick={() => handleTabClick("videos")} className={`flex-1 cursor-pointer ${ activeTab === "videos" ? "bg-mantis-400 rounded-t-lg border-b border-black flex justify-center " : "flex justify-center border-b border-black"} tabx`}>
                             <h1 className="text-sm">Videos</h1>
                         </div>
 
                     </div>
 
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 bg-mantis-400">
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
 
-                    <div className={`${ activeTab === "fotos" ? "block" : "hidden" } column overflow-y-auto h-auto w-screen max-w-xs sm:max-w-5xl ml-4 sm:ml-24 sm:mt-4`}>
+                    <div className={`${ activeTab === "fotos" ? "block" : "hidden" } column overflow-y-auto w-screen max-w-xs sm:max-w-3xl ml-4 sm:ml-24 mt-14 sm:mt-4`}>
 
                         <div className="">
                             <Carousel showThumbs={false} showStatus={false} itemsToShow={1} itemsToScroll={1} infiniteLoop={false} showArrows={true}>
@@ -59,7 +59,7 @@ function Detail({ onClose, proyecto }) {
                     </div>
 
 
-                    <div className={`${ activeTab === "videos" ? "block" : "hidden" } flex items-center justify-center h-screen max-h-96 w-72 sm:w-screen sm:max-w-5xl ml-4 sm:ml-24 sm:mt-14 overflow-y-auto`}>
+                    <div className={`${ activeTab === "videos" ? "block" : "hidden" } flex items-center justify-center h-screen max-h-96 w-72 sm:w-screen sm:max-w-4xl ml-4 sm:ml-10 mt-4 sm:mt-6 overflow-y-auto`}>
                         <div className=" h-full w-full">
                             <iframe
                                 width="100%"
